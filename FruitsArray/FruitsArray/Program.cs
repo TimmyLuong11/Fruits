@@ -6,7 +6,7 @@ namespace FruitsArray
     {
         static void Main(string[] args)
         {
-            string[] fruit = { "apples", "oranges", "banana", "grapes", "blueberries" };
+            string[] fruit = { "apples", "oranges", "bananas", "grapes", "blueberries" };
             double[] price = { 0.99, 0.50, 0.50, 2.99, 1.99 };
             string answer = string.Empty;
 
@@ -16,7 +16,7 @@ namespace FruitsArray
             }
 
             Console.WriteLine("\nWhat fruit do you want?");
-            answer = Console.ReadLine().ToLower();
+            answer = Console.ReadLine().ToLower().Trim();
 
             if (answer == "apples")
             {
@@ -28,7 +28,7 @@ namespace FruitsArray
             }
             else if (answer == "banana")
             {
-                Console.WriteLine($"The price of banana are {price[2].ToString("C")}");
+                Console.WriteLine($"The price of bananas are {price[2].ToString("C")}");
             }
             else if (answer == "grapes")
             {
